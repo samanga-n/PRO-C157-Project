@@ -7,19 +7,13 @@
     
   </head>
   <body>
-    <a-scene background="color:#90caf9">
-      <!-- Ground -->
-      <a-plane
-        id="ground"
-        color="#78909c"
-        width="200"
-        height="100"
-        rotation="-90 0 0"
-      ></a-plane>
-      <!-- Poster Container -->
-      
+    
+    <a-scene id="main-scene">
 
-      <a-camera id="camera" wasd-controls="enabled:false;" position="0 10 20">
+    <a-sky id="main-container" radius="5000" color="#"></a-sky>
+    
+    <a-camera id="camera" wasd-controls="enabled:false;">
+    
         <a-entity
           id="camera-cursor"
           cursor
@@ -29,17 +23,7 @@
         >
         </a-entity>
 
-        <a-entity
-          id="app-title"
-          position="0 0.73 -1"
-          text="font: exo2bold; align: center; width: 2; color: #000; value: Virtual Comics Store !"
-        >
-          <a-entity
-            id="app-subtitle"
-            position="0 -0.1 0"
-            text="font: dejavu; align: center; width: 1; color: #0F184E; value: Get Your Favourite Comics"
-          ></a-entity>
-        </a-entity>
+        
       </a-camera>
     </a-scene>
   </body>
